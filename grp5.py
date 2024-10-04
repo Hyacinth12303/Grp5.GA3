@@ -137,7 +137,7 @@ def scatter_plot():
     plt.ylabel('Total Price')
     plt.show()
 
-  scatter_plot()
+scatter_plot()
 
 """As can be seen in the scatter plot, age seems to not have much effect on the total price spent by a customer as the distribution of total price spent seems quite even among all ages.
 
