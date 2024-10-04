@@ -16,9 +16,6 @@ Reyes, Joanna Hyacinth M.
 """
 
 #loading the necessities
-!pip install pandas numpy matplotlib seaborn
-
-!pip install kaggle #idk
 
 # imports
 
