@@ -88,11 +88,12 @@ def ProdGender():
   ax.set_xlabel('Product Type')
   ax.set_ylabel('Number of Purchases')
   st.pyplot(fig)
+  plt.clf()
 
 ProdGender()
 
-"""This shows that there are more people who prefers purchasing Smartphones the most while Headphones the least. It also shows that more men buy the products than women with a slight difference.
-"""
+st.write("This shows that there are more people who prefers purchasing Smartphones the most while Headphones the least. It also shows that more men buy the products than women with a slight difference.")
+
 st.markdown("**[Reyes]** - Ratings by Product Type")
 
 def ProdRatings():
@@ -103,10 +104,11 @@ def ProdRatings():
   ax.set_xlabel('Product Type')
   ax.set_ylabel('Number of Ratings')
   st.pyplot(fig)
+  plt.clf()
 
 ProdRatings()
 
-"""In this graph, it shows that Laptop, Smartwatch and Tablet had a rating of 3 stars the most, while the Smartphone has a mix of 2 and 5 star ratings. There are also more people who rated 2 stars more than 5 stars from purchasing the Smartphone."""
+st.write("In this graph, it shows that Laptop, Smartwatch and Tablet had a rating of 3 stars the most, while the Smartphone has a mix of 2 and 5 star ratings. There are also more people who rated 2 stars more than 5 stars from purchasing the Smartphone.")
 
 st.markdown("**[Ramos]** - Percentages of Male and Female Loyalty Members")
 
@@ -146,31 +148,32 @@ scatter_plot()
 
 st.write("As can be seen in the scatter plot, age seems to not have much effect on the total price spent by a customer as the distribution of total price spent seems quite even among all ages.")
 
-"""**[Bayogos]** - Piechart of Shipping Distribution
-"""
+st.markdown("**[Bayogos]** - Piechart of Shipping Distribution")
 
 def pie():
   shipping_counts = df['Shipping Type'].value_counts()
   plt.pie(shipping_counts, labels=shipping_counts.index, autopct='%1.1f%%', startangle=90)
   plt.title('Shipping Type Distribution')
-  plt.show()
+  st.pyplot(plt)
+  plt.clf()
+
 pie()
 
-"""The pie chart shows majority of the Shipping Type used in the dataset was the Standard form of delivery with a percentage of 33.6%, while the other methods for shipping are nearly equally distributed to 16%.
+st.write("The pie chart shows majority of the Shipping Type used in the dataset was the Standard form of delivery with a percentage of 33.6%, while the other methods for shipping are nearly equally distributed to 16%.
 
-**[Bayogos]** - Price of Product Type
-"""
+st.markdown("**[Bayogos]** - Price of Product Type")
 
 def violin():
   sns.violinplot(x='Product Type', y='Total Price', data=df)
   plt.title('Distribution of Total Price by Product Type')
   plt.xlabel('Product Type')
   plt.ylabel('Total Price')
+  st.pyplot(plt)
   plt.clf()
 
 violin()
 
-"""This violin graph shows the distribution of the total price for each product. The wider sections indicate a high concentration of that product, shown to be more common within the lower price range. When counting in the narrower peaks, it is revealed that smartphones and smartwatch have a variety with their models, while tablets and headphones are more concentrated."""
+st.write("This violin graph shows the distribution of the total price for each product. The wider sections indicate a high concentration of that product, shown to be more common within the lower price range. When counting in the narrower peaks, it is revealed that smartphones and smartwatch have a variety with their models, while tablets and headphones are more concentrated.")
 
 st.header("Conclusion")
 
