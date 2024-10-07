@@ -6,5 +6,4 @@ pandas
 numpy
 
 matplotlib
-matplotlib.ticker
 seaborn
