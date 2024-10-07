@@ -7,9 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1mi81r81MbTI1uehzA53NHGIwmhNy9XLA"""
 
 #loading the necessities
-pip install --upgrade pip
-pip install matplotlib
-pip install streamlit
+
 
 
 
