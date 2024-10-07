@@ -82,11 +82,12 @@ df['Add-ons Purchased'].value_counts()
 
 def ProdGender():
   product_index = df.groupby(['Product Type', 'Gender'])['Gender'].count().reset_index(name='index')
-  sns.barplot(x='Product Type', y='index', hue='Gender', data=product_index, palette={"Male": "lightblue", "Female": "pink"})
-  plt.title('Product Type Popularity by Gender')
-  plt.xlabel('Product Type')
-  plt.ylabel('Number of Purchases')
-  plt.show()
+  fig, ax = plt.subplots()
+  sns.barplot(x='Product Type', y='index', hue='Gender', data=product_index, palette={"Male": "lightblue", "Female": "pink"}, ax=ax)
+  ax.set_title('Product Type Popularity by Gender')
+  ax.set_xlabel('Product Type')
+  ax.set_ylabel('Number of Purchases')
+  st.pyplot(fig)
 ProdGender()
 
 """This shows that there are more people who prefers purchasing Smartphones the most while Headphones the least. It also shows that more men buy the products than women with a slight difference.
@@ -96,11 +97,12 @@ ProdGender()
 
 def ProdRatings():
   ProdRate = df.groupby(['Product Type', 'Rating'])['Rating'].count().reset_index(name='count')
-  sns.barplot(x='Product Type', y='count', hue='Rating', data=ProdRate)
-  plt.title('Ratings by Product Type')
-  plt.xlabel('Product Type')
-  plt.ylabel('Number of Ratings')
-  plt.show()
+  fig, ax = plt.subplots()
+  sns.barplot(x='Product Type', y='count', hue='Rating', data=ProdRate, ax=ax)
+  ax.set_title('Ratings by Product Type')
+  ax.set_xlabel('Product Type')
+  ax.set_ylabel('Number of Ratings')
+  st.pyplot(fig)
 
 ProdRatings()
 
