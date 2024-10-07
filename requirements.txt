@@ -1,4 +1,3 @@
-pip install pandas numpy 
 pip install --upgrade pip
 matplotlib seaborn streamlit
 
