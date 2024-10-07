@@ -161,11 +161,12 @@ pie()
 """
 
 def violin():
-  sns.violinplot(x='Product Type', y='Total Price', data=df)
-  plt.title('Distribution of Total Price by Product Type')
-  plt.xlabel('Product Type')
-  plt.ylabel('Total Price')
-  plt.show()
+  chrt, a = plt.subplots()
+  sns.violinplot(x='Product Type', y='Total Price', data=df, a=a)
+  a.set_title('Distribution of Total Price by Product Type')
+  a.set_xlabel('Product Type')
+  a.set_ylabel('Total Price')
+  st.pyplot(fig)
 
 violin()
 
