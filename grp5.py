@@ -165,7 +165,7 @@ def violin():
   plt.title('Distribution of Total Price by Product Type')
   plt.xlabel('Product Type')
   plt.ylabel('Total Price')
-  plt.plyplot()
+  plt.clf()
 
 violin()
 
