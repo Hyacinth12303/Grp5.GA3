@@ -91,8 +91,8 @@ def ProdGender():
 ProdGender()
 
 """This shows that there are more people who prefers purchasing Smartphones the most while Headphones the least. It also shows that more men buy the products than women with a slight difference.
-
-**[Reyes]** - Ratings by Product Type"""
+"""
+st.markdown("**[Reyes]** - Ratings by Product Type")
 
 def ProdRatings():
   ProdRate = df.groupby(['Product Type', 'Rating'])['Rating'].count().reset_index(name='count')
