@@ -159,7 +159,7 @@ def pie():
 
 pie()
 
-st.write("The pie chart shows majority of the Shipping Type used in the dataset was the Standard form of delivery with a percentage of 33.6%, while the other methods for shipping are nearly equally distributed to 16%.
+st.write("The pie chart shows majority of the Shipping Type used in the dataset was the Standard form of delivery with a percentage of 33.6%, while the other methods for shipping are nearly equally distributed to 16%.")
 
 st.markdown("**[Bayogos]** - Price of Product Type")
 
