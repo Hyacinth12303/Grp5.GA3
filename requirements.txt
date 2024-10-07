@@ -5,6 +5,6 @@ streamlit
 pandas
 numpy
 
-matplotlib.pyplot
+matplotlib
 matplotlib.ticker
 seaborn
