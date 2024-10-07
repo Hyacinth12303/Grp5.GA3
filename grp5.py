@@ -78,7 +78,7 @@ df['Purchase Date'].value_counts()
 
 df['Add-ons Purchased'].value_counts()
 
-"""**[Reyes]** - Product Type Popularity by Gender"""
+st.markdown("**[Reyes]** - Product Type Popularity by Gender")
 
 def ProdGender():
   product_index = df.groupby(['Product Type', 'Gender'])['Gender'].count().reset_index(name='index')
