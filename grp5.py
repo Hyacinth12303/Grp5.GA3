@@ -90,10 +90,9 @@ def ProdGender():
   st.pyplot(fig)
 ProdGender()
 
-st.write("This shows that there are more people who prefers purchasing Smartphones the most while Headphones the least. It also shows that more men buy the products than women with a slight difference.
+"""This shows that there are more people who prefers purchasing Smartphones the most while Headphones the least. It also shows that more men buy the products than women with a slight difference.
 
-**[Reyes]** - Ratings by Product Type")
-
+**[Reyes]** - Ratings by Product Type"""
 
 def ProdRatings():
   ProdRate = df.groupby(['Product Type', 'Rating'])['Rating'].count().reset_index(name='count')
