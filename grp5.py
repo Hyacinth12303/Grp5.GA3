@@ -101,6 +101,7 @@ def ProdRatings():
   plt.xlabel('Product Type')
   plt.ylabel('Number of Ratings')
   plt.show()
+
 ProdRatings()
 
 """In this graph, it shows that Laptop, Smartwatch and Tablet had a rating of 3 stars the most, while the Smartphone has a mix of 2 and 5 star ratings. There are also more people who rated 2 stars more than 5 stars from purchasing the Smartphone."""
@@ -183,9 +184,11 @@ st.markdown("""
   * Laptops, smartwatch and tablet are rated 3 stars most frequently, while the smartphone was most frequently rated 2 stars or to a slightly lesser degree, 5 stars.
 
 3. Observation by Age
+
     Age seems to not have much effect on the total price spent by a customer; every age seem likely to spend at a very wide price range.
 
 4. Observation by Shipping Type
+
     Majority of the Shipping Type used by customers was the Standard form of delivery, while the other methods for shipping are nearly equally distributed.
 
 """)
