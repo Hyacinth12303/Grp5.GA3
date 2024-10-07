@@ -1,7 +1,7 @@
 # Electronic sales Analysis Project
 ## Team Members
 - Bayogos, Ira Louise B. - 2021105633 - IraBrazil
-- Ramos, Louella Amor C. - StudNo - 
+- Ramos, Louella Amor C. - StudNo - lacramos
 - Reyes, Joanna Hyacinth M. - StudNo - Hyacinth12303
 ## Overview
 This  project provides a comprehensive analysis of customer purchases from an electronics sales dataset spanning from September 2023 to September 2024. The analysis includes insights into product preferences, customer demographics, purchase behaviors, and ratings. The dataset contains 20,000 entries, capturing customer ID, demographic information, purchase details, ratings, and other factors relevant to the transactions.
