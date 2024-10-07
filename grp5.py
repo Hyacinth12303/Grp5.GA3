@@ -19,12 +19,7 @@ Reyes, Joanna Hyacinth M.
 
 # imports
 import streamlit as st
-import pandas as pd
-import numpy as np
 
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
-import seaborn as sns
 
 # Set seaborn styles
 sns.set_theme(style="whitegrid", palette="pastel")
